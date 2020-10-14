@@ -1,0 +1,149 @@
+.wrapper {
+    padding: 0 20px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-gap: 1em;
+    height: 100%;
+}
+
+.header,
+.nav,
+.main,
+.aside,
+.footer {
+    border: 1px solid black;
+}
+
+.header,
+.footer {
+    grid-column: 1/17;
+    height: 20vh;
+}
+
+.nav,
+.main,
+.aside {
+    height: 60vh;
+}
+
+.nav {
+    grid-column: 1/3;
+}
+
+.main {
+    grid-column: 3 / 14;
+}
+
+.aside {
+    grid-column: 14 / 17;
+}
+
+.header__logo {
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+    margin-left: 50px;
+    padding-top: 40px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.nav__item {
+    padding-bottom: 10px;
+    color: inherit;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding: 20px 20px;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+}
+
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.your-photo {
+    width: 120px;
+    height: 120px;
+    padding-top: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.pass-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-height: 400px;
+    margin: 10% auto 0 auto;
+    padding: 0 15px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.pass-window__title {
+    font-family: sans-serif;
+    font-size: 38px;
+}
+
+.pass-window__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-top: 100px;
+}
+
+.button {
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    outline: none;
+}
+
+
+.true-button {
+    background-color: green;
+}
+
+.true-button:hover {
+    cursor: pointer;
+    background-color: #006400;
+}
+
+.false-button {
+    background-color: red;
+}
+
+.false-button:hover {
+    cursor: pointer;
+    background-color: #DC143C;
+}
+
+.none {
+    display: none;
+}   
